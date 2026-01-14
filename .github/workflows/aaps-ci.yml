@@ -113,7 +113,7 @@ jobs:
           echo "✅ Keystore and credentials validated."
 
     
-      - name: Retrieving Google Drive access token
+      - name: 
         run: |
           echo "🔐 Getting Google OAuth2 access token..."
          
@@ -186,7 +186,7 @@ jobs:
           mv app/build/outputs/apk/${{ env.VARIANT_FLAVOR }}/${{ env.VARIANT_TYPE }}/*.apk aaps-${{ env.VERSION }}${{ env.VERSION_SUFFIX }}.apk
           mv wear/build/outputs/apk/${{ env.VARIANT_FLAVOR }}/${{ env.VARIANT_TYPE }}/*.apk aaps-wear-${{ env.VERSION }}${{ env.VERSION_SUFFIX }}.apk
 
-      - name: Upload APKs to Google Drive
+      - name: 
         run: |
           set -e
         
